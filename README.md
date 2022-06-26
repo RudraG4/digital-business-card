@@ -1,6 +1,7 @@
 # Digital Business Card - React App
 
-![image](https://user-images.githubusercontent.com/25662020/175835374-80d5d1d9-a600-4b88-9847-f0cf556e2799.png)
+![image](https://user-images.githubusercontent.com/25662020/175836078-060a57b0-419c-48e3-9850-546842fdda66.png)
+
 
 ## Run Locally
 
