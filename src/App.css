@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+*,
+*::after,
+*::before {
+    margin : 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+    position        : relative;
+    background-color: #1C1C1C;
+    display         : flex;
+    flex-direction  : row;
+    flex-wrap       : wrap;
+    justify-content : space-evenly;
+    gap             : 30px;
+    padding         : 53px 65px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card_option {
+    width           : 550px;
+    height          : 868px;
+    background-color: #23252C;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    height        : 780px;
+    width         : 317px;
+    background    : #1A1B21;
+    border-radius : 10px;
+    overflow      : hidden;
+    display       : flex;
+    flex-direction: column
 }
 
-.App-link {
-  color: #61dafb;
+.card .card-img {
+    width       : 317px;
+    height      : 317px;
+    aspect-ratio: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card .card-info {
+    height        : 399px;
+    flex          : 1;
+    padding       : 20px 35px;
+    display       : flex;
+    gap           : 32px;
+    flex-direction: column;
+}
+
+.card .card-name {
+    font-style   : normal;
+    font-weight  : 700;
+    font-size    : 25px;
+    line-height  : 30px;
+    text-align   : center;
+    color        : #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.card .card-role {
+    font-style   : normal;
+    font-weight  : 400;
+    font-size    : 12.8px;
+    line-height  : 15px;
+    text-align   : center;
+    color        : #F3BF99;
+    margin-bottom: 5px;
+}
+
+.card-website {
+    font-style   : normal;
+    font-weight  : 400;
+    font-size    : 10.24px;
+    line-height  : 150%;
+    text-align   : center;
+    color        : #F5F5F5;
+    margin-bottom: 15px;
+}
+
+.card-btn-group {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: center;
+    gap            : 8px;
+}
+
+.card-btn {
+    box-sizing     : border-box;
+    height         : 34px;
+    border-radius  : 6px;
+    background     : #fff;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    flex           : 1;
+    padding        : 9px 13px 9px 11px;
+    gap            : inherit;
+    border         : 1px solid #D1D5DB;
+    box-shadow     : 0px 1px 2px rgba(0, 0, 0, 0.05);
+    cursor         : pointer;
+}
+
+.card-btn.btn-primary {
+    background: #5093E2;
+    color     : white;
+    border    : none;
+}
+
+.card_option.no-linkedin .card-btn.btn-linkedin,
+.card_option.no-linkedin .card-social-linkedin {
+    display: none;
+}
+
+.card .card-info-title {
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 16px;
+    line-height: 150%;
+    color      : #F5F5F5;
+}
+
+.card .card-content p {
+    font-style   : normal;
+    font-weight  : 400;
+    font-size    : 10.24px;
+    line-height  : 150%;
+    color        : #DCDCDC;
+    margin-bottom: 15px;
+}
+
+.card .card-social {
+    height         : 64px;
+    background     : #161619;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 24px;
+}
+
+.card .card-social div {
+    font-size: 1.5rem;
+    color    : #918E9B;
+    cursor   : pointer;
 }
